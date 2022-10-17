@@ -47,6 +47,18 @@ for (let i= 0; i < squares.length; i++ ){
 
     });
 
+    squares[i].addEventListener("mouseover", function() {
+
+        squares[i].classList.add("hover");
+
+    })
+
+    squares[i].addEventListener("mouseout", function() {
+
+        squares[i].classList.remove("hover");
+    })
+
+
 }
 
 })
