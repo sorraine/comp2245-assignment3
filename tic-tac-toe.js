@@ -16,4 +16,37 @@ for (let i= 0; i < childb.length; i++){
 
 
 }
+
+var xoxo = "X";
+var squares = document.getElementsByClassName("square");
+var tics = new Array (9);
+
+
+for (let i= 0; i < squares.length; i++ ){
+
+    squares[i].addEventListener("click",function(){
+
+        if (squares[i].innerHTML == "") {
+
+            if (xoxo == "X") {
+
+                squares[i].innerHTML = "X";
+                squares[i].classList.add("X");
+                xoxo = "O";
+
+                        
+            } else {
+                squares[i].innerHTML = "O";
+                squares[i].classList.add("O");
+                xoxo = "X";
+
+                
+            }
+          
+        }
+
+    });
+
+}
+
 })
